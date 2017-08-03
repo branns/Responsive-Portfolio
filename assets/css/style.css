@@ -98,40 +98,40 @@ li a.active {
 
 #aboutme {
 	background-color: white;
-	height: 500px;
-	width: 800px;
-	margin: 50px 50px 50px 50px;
-	padding: 15px;
+	height: 50%;
+	width: 60%;
+	margin: 2% 2% 2% 2%;
+	padding: 2%;
 	float: left;
 	overflow: scroll;
 }
 
 #mypic {
 	float: left;
-	padding: 10px;
+	padding: 1%;
 }
 
 #portfolio {
 	float: left;
 	background-color: white;
-	height: 900px;
-	width: 800px;
-	margin: 50px 50px 50px 50px;
-	padding: 50px;
+	height: 50%;
+	width: 60%;
+	margin: 2% 2% 2% 2%;
+	padding: 2%;
 	overflow: scroll;
 }
 
 #form {
 	background-color: white;
 	float: left;
-	margin: 50px 50px 50px 50px;
-	height: 600px;
-	width: 800px;
+	margin: 2% 2% 2% 2%;
+	height: 50%;
+	width: 60%;
 }
 
 .pimage {
 	float: left;
-	border: 3px solid black;
+	border: .5% solid black;
 }
 
 .desc {
@@ -181,4 +181,53 @@ footer {
   	text-align: center;
   	height: 60px;
   	border-top: 5px solid teal;
+}
+
+@media screen and (max-width: 980px) {
+	#aboutme, #form, #portfolio {
+		width: 55%;
+		padding: 20px;
+	}
+	#connect {
+		width: 30%;
+	}
+}
+@media screen and (max-width: 768px) {
+	body {
+		background-color: #333;
+	}
+	#aboutme, #form, #portfolio {
+		width: 98%;
+		padding: 20px;
+		margin: 1% 1% 1% 1%;
+	}
+	#connect {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 640px) {
+	body {
+		background-color: #333;
+	}
+	header {
+		position: static;
+	}
+	h1 {
+		width: 100%;
+		margin: 0%;
+		align-content: center;
+		text-align: center;
+	}
+	ul {
+		width: 100%;
+		background-color: white;
+		margin: 0%;
+	}
+	#aboutme, #form, #portfolio {
+		width: 98%;
+		padding: 40px;
+	}
+	#connect {
+		width: 100%;
+	}
 }
